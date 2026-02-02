@@ -1,6 +1,6 @@
 # Notifications
 
-Ce projet surveille des pages web pour détecter la disponibilité de produits spécifiques (par exemple, de la RAM 32 Go) et envoie des notifications via ntfy.sh lorsqu'un texte indicateur ("Ajouter au panier") est trouvé sur la page.
+Ce projet surveille des pages web pour détecter la disponibilité de produits spécifiques (par exemple, de la RAM 32 Go) et envoie des notifications via ntfy.sh lorsqu'un texte indicateur est trouvé sur la page.
 
 ## Fonctionnalités
 
