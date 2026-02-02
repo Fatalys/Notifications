@@ -48,16 +48,16 @@ Exécutez le script principal :
 python check_page.py
 ```
 
-Le script vérifiera chaque URL, attendra le chargement de la page, et enverra une notification si le texte "Ajouter au panier" est détecté.
+Le script vérifiera chaque URL, attendra le chargement de la page, et enverra une notification si le texte est détecté.
 
 ## Workflow GitHub Actions
 
 Ce projet inclut un workflow GitHub Actions qui exécute automatiquement la vérification toutes les 5 minutes. Pour l'utiliser :
 
 1. Ajoutez les secrets suivants dans les paramètres de votre dépôt GitHub :
-   - `PAGE_URL` : (Note : Le script utilise `URLS`, mais le workflow a `PAGE_URL` – ajustez si nécessaire)
-   - `SEARCH_TEXT` : Texte à rechercher (par défaut "Ajouter au panier")
-   - `GOOGLE_CHAT_WEBHOOK` : Webhook pour Google Chat (si utilisé, mais le script utilise ntfy.sh)
+   - `URLS` : La/Les page.s où chercher
+   - `SEARCH_TEXT` : Texte à rechercher
+   - `NTFY_URL` : Webhook pour ntfy.sh
 
 2. Le workflow se déclenche sur un planning (toutes les 5 minutes) ou manuellement via `workflow_dispatch`.
 
