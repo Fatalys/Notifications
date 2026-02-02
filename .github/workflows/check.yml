@@ -39,5 +39,5 @@ jobs:
         env:
           URLS: ${{ secrets.URLS }}
           SEARCH_TEXT: ${{ secrets.SEARCH_TEXT }}
-          GOOGLE_CHAT_WEBHOOK: ${{ secrets.GOOGLE_CHAT_WEBHOOK }}
+          NTFY_URL: ${{ secrets.NTFY_URL }}
         run: python check_page.py
