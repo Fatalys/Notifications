@@ -1,9 +1,6 @@
 name: Check Page Every 5 Minutes
 
 on:
-  schedule:
-    # Exécute toutes les 10 minutes (*/10 * * * *)
-    - cron: '*/10 * * * *'
   
   # Permet de déclencher manuellement
   workflow_dispatch:
